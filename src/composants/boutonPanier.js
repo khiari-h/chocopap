@@ -8,7 +8,7 @@ const BoutonPanier = () => {
   
   return (
     <a href={urlPanier}>
-        <img src={LogoPanier} alt="Bouton panier" />
+        <img src={LogoPanier} alt="Bouton panier" className='btnpanier'/>
       </a>
   );
 }

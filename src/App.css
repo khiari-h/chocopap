@@ -1,5 +1,28 @@
 .App-header {
   background-color: #B65F28;
- 
+  display: flex;
+  align-items: center;
+  
 }
+
+.bouton {
+  display: flex;
+  align-items: center;
+  margin-left: 600px;
+  
+}
+
+.bouton > * {
+  margin-right: 20px;
+}
+
+
+.logo-image, .btnpanier {
+
+  width: 10%; 
+  height: 10%; 
+}
+
+
+
 
