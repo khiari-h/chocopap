@@ -3,6 +3,7 @@ import BoutonBoutique from './composants//boutonBoutique';
 import Logo from './composants/logo';
 import BoutonPanier from './composants/boutonPanier';
 import Carouselaccueil from './composants/carousel';
+import Footer from './composants/footer';
 import './App.css';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Carouselaccueil />
         </div>
 <footer>
-  
+  <Footer/>
 </footer>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import accueil1 from '../images/accueil1.jpg';
@@ -21,14 +22,23 @@ function CarouselAccueil() {
         <div>
           <img src={accueil1} alt="Accueil 1" />
           <p className="legend">Buffet sucré</p>
+          <Link to="/boutique">
+            <button>Acheter</button>
+          </Link>
         </div>
         <div>
           <img src={accueil2} alt="Accueil 2" />
           <p className="legend">Bonbons</p>
+          <Link to="/boutique">
+            <button>Acheter</button>
+          </Link>
         </div>
         <div>
           <img src={accueil3} alt="Accueil 3" />
           <p className="legend">Chocolats</p>
+          <Link to="/boutique">
+            <button>Acheter</button>
+          </Link>
         </div>
       </Slider>
     </div>

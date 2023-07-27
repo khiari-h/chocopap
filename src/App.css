@@ -23,6 +23,33 @@
   height: 10%; 
 }
 
+.footerchoco {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #2C1E1E; 
+  color: white; 
+  padding: 20px; 
+}
 
+.chocopap,
+.contact,
+.reseaux {
+  flex: 1; 
+  padding: 10px; 
+}
 
+.reseaux {
+  display: flex;
+align-items: center;
+  justify-content: center;
+  
+
+}
+
+.reseaux img {
+  margin-right: 30px;
+  width: 10%;
+  
+}
 
