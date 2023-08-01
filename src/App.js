@@ -1,38 +1,19 @@
-// Importez les dépendances nécessaires, y compris le composant Provider
+// App.js
 import React from 'react';
-import { Provider } from 'react-redux';
-import store from './store';
-import BoutonAccueil from './composants/boutonAccueil';
-import BoutonBoutique from './composants/boutonBoutique';
-import Logo from './composants/logo';
-import BoutonPanier from './composants/boutonPanier';
-import Carouselaccueil from './composants/carousel';
-import Footer from './composants/footer';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Accueil from './pages/accueil';
+import Boutique from './pages/boutique';
+import Produit from './pages/produit';
 
 function App() {
   return (
-    // Utilisez le composant Provider pour envelopper toute votre application
-    <Provider store={store}>
-      <div className="App">
-        <header className="App-header">
-          <div className="logo-container">
-            <Logo />
-          </div>
-          <div className="bouton">
-            <BoutonAccueil />
-            <BoutonBoutique />
-            <BoutonPanier />
-          </div>
-        </header>
-        <div className='carousel'>
-          <Carouselaccueil />
-        </div>
-        <footer>
-          <Footer/>
-        </footer>
-      </div>
-    </Provider>
+    <div className="App">
+      <Routes>
+        <Route path="/accueil" element={<Accueil />} />
+        <Route path="/boutique" element={<Boutique />} />
+        <Route path="/produit" element={<Produit />} />
+      </Routes>
+    </div>
   );
 }
 

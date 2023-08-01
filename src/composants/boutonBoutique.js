@@ -1,17 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importez le composant Link depuis 'react-router-dom'
 
 const BoutonBoutique = () => {
-  const handleClic = () => {
-    window.location.href = '/boutique';
-  };
-
   return (
     <div>
-      <p>
-        <a href="/boutique" onClick={handleClic}>
-          Boutique
-        </a>
-      </p>
+      
+      <Link to="/produit">Boutique</Link>
     </div>
   );
 };
