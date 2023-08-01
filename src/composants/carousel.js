@@ -16,29 +16,44 @@ function CarouselAccueil() {
     slidesToScroll: 1
   };
 
+  const buttonStyle = {
+    display: 'block', 
+    margin: 'auto',
+    marginTop: '10px', 
+    padding: '10px 20px',
+    backgroundColor: 'blue', 
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer'
+  };
+
   return (
     <div className="carousel-container">
       <Slider {...settings}>
         <div>
-          <img src={accueil1} alt="Accueil 1" />
-          <p className="legend">Buffet sucré</p>
+          <img src={accueil1}  alt="Accueil 1" />
           <Link to="/boutique">
-            <button>Acheter</button>
+            <button style={buttonStyle}>Voir la boutique</button>
           </Link>
+          <p className="legend">Buffet sucré</p>
+          
         </div>
         <div>
           <img src={accueil2} alt="Accueil 2" />
-          <p className="legend">Bonbons</p>
           <Link to="/boutique">
-            <button>Acheter</button>
+            <button style={buttonStyle}>Voir la boutique</button>
           </Link>
+          <p className="legend">Bonbons</p>
+          
         </div>
         <div>
           <img src={accueil3} alt="Accueil 3" />
-          <p className="legend">Chocolats</p>
           <Link to="/boutique">
-            <button>Acheter</button>
+            <button style={buttonStyle}>Voir la boutique</button>
           </Link>
+          <p className="legend">Chocolats</p>
+          
         </div>
       </Slider>
     </div>
